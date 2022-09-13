@@ -95,15 +95,18 @@ p{
     text-align: center;
     margin-bottom: 1%;
 }
-.college-info{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-margin: auto;
-
-}
 .college-info h4{
     font-weight:600;
+}
+.college-info{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+.right-info{
+    text-align: center;
 }
 /* courses list */
 .course-list{
@@ -125,8 +128,10 @@ margin: auto;
         width: 100%;
         display:grid;
         grid-template-columns: repeat(2,minmax(50px,1fr));
-        grid-column-gap: 5%;  
+        grid-column-gap: 1%;  
         justify-items: stretch;
+        padding-left: 25%;
+        padding-right: 25%;
 }
 .course-a, .course-c{
     justify-self: end;
@@ -157,6 +162,7 @@ margin: auto;
     width: 50%;
     margin: auto;
     text-align: center;
+    margin-bottom: 20%;
 }
 .skills p{
     margin-bottom: 0;
