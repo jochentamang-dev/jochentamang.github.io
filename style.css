@@ -1,0 +1,163 @@
+:root{
+    --ff-primary: 'Rajdhani', sans-serif;
+    --ff-secondary: Helvetica;
+    --ff-tertiary: 'M PLUS 1 Code', sans-serif;
+}
+body{
+    background-color: #ffffff;
+    margin: 0 0 55px 0;
+    color: #000000;
+}
+h1,h2,h3,h4{
+    font-family: var(--ff-tertiary);
+    margin: 0;
+}
+p{
+    font-family: var(--ff-tertiary);
+}
+/* navbar */
+.nav {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    background-color: #89c4f4;
+    display: flex;
+    overflow-x: auto;
+}
+.nav__link{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow:hidden;
+    white-space: nowrap;
+    color:#444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.nav__link:hover{
+    background-color: aliceblue;
+}
+.nav__link:active {
+    color: #9ac9ff;
+}
+.img-fluid{
+    max-width: 100%;
+    min-height: auto;
+    box-shadow: 10px 10px 5px rgb(119, 101, 71);
+}
+.grid-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    min-height:92.5vh;
+    align-items: center;
+
+}
+.grid-child{
+    margin-top: 5%;
+    padding: 3.75%;
+}
+
+.grid-right{
+    text-align: center;
+}
+@media only screen and (min-width: 640px)
+{
+    .grid-main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 5%;
+        justify-items: center;
+        min-height:92.5vh;
+        align-items: center;
+    
+    }
+    .grid-child{
+        margin-top: 5%;
+        padding: 3.75%;
+    }
+    .grid-left{
+        margin-left: 5%;
+    }    
+}
+
+/* about me */
+.about-section{
+    margin: 5%;
+    
+}
+.about-me{
+    text-align: center;
+    margin-bottom: 1%;
+}
+.college-info{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+margin: auto;
+
+}
+.college-info h4{
+    font-weight:600;
+}
+/* courses list */
+.course-list{
+    margin-top: 10px;
+    width: 100%;
+    display:grid;
+    grid-template-columns:1fr; 
+    align-items: center;
+    justify-items: center;
+}
+.course-title h4{
+    font-weight: 600;
+    text-align: center;
+}
+@media only screen and (min-width: 640px)
+{
+    .course-list{
+        margin-top: 5px;
+        width: 100%;
+        display:grid;
+        grid-template-columns: repeat(2,minmax(50px,1fr));
+        grid-column-gap: 5%;  
+        justify-items: stretch;
+}
+.course-a, .course-c{
+    justify-self: end;
+}
+.course-b, .course-d{
+    justify-self: start;
+    padding-left: 5%;
+}
+}
+.courses{
+    text-align: center; 
+}
+.courses > p {
+    font-style:italic;
+}
+
+
+/* Technical skills */
+
+.skills-title{
+    text-align: center;
+    align-items: center;
+}
+.skills h4{
+    font-weight: 600;
+}
+.skills{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.skills p{
+    margin-bottom: 0;
+}
