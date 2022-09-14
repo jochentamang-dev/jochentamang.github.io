@@ -170,3 +170,55 @@ h4{
 .skills p{
     margin-bottom: 0;
 }
+
+/* Projects section */
+.projects{
+    margin: 5%;
+}
+.project-header h1,p{
+    text-align: center;
+}
+.project-header h1{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.project-grid{
+    width: 100%;
+    display:grid;
+    align-items: center;
+    row-gap: 5px;
+    justify-items: center;
+}
+@media only screen and (min-width: 640px)
+{
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 5%;
+    justify-items: center;
+    align-items: stretch;
+}
+}
+.project{
+    border:2px solid black;
+    border-radius: 5px;
+    height:auto;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.project h4,p{
+    font-family: var(--ff-secondary);
+    font-style: italic;
+    margin:0;
+
+}
+.link-logo{
+    target: "_blank"
+}
+
+.material-icons.md-36 { 
+    font-size: 36px;
+}
+
