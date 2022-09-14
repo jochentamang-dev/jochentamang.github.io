@@ -95,6 +95,9 @@ p{
     text-align: center;
     margin-bottom: 1%;
 }
+.degree{
+    margin-top: 1%;
+}
 .college-info h4{
     font-weight:600;
 }
@@ -117,7 +120,7 @@ p{
     align-items: center;
     justify-items: center;
 }
-.course-title h4{
+h4{
     font-weight: 600;
     text-align: center;
 }
