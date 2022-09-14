@@ -183,11 +183,12 @@ h4{
     margin-bottom: 10px;
 }
 .project-grid{
-    width: 100%;
     display:grid;
     align-items: center;
     row-gap: 5px;
     justify-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 @media only screen and (min-width: 640px)
 {
@@ -204,7 +205,7 @@ h4{
     border-radius: 5px;
     height:auto;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 
 }
 
@@ -214,11 +215,27 @@ h4{
     margin:0;
 
 }
-.link-logo{
-    target: "_blank"
-}
 
 .material-icons.md-36 { 
     font-size: 36px;
+}
+
+/* Contact Info section */
+.contact-header h1{
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.contact p{
+    font-family: var(--ff-tertiary);
+    font-size: large;
+}
+.contact-info a{
+    text-decoration: none;
+    color:inherit;
+
+}
+.contact{
+    margin: 5%;
 }
 
