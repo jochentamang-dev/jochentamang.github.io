@@ -209,7 +209,7 @@ h4{
 
 }
 
-.project h4,p{
+.project h4, .project p{
     font-family: var(--ff-secondary);
     font-style: italic;
     margin:0;
