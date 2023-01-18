@@ -136,12 +136,15 @@ h4{
         padding-left: 25%;
         padding-right: 25%;
 }
-.course-a, .course-c{
+.course-a, .course-c, .course-e{
     justify-self: end;
 }
-.course-b, .course-d{
+.course-b, .course-d, .course-f{
     justify-self: start;
     padding-left: 5%;
+}
+.course-c p{
+    text-align: right;
 }
 }
 .courses{
